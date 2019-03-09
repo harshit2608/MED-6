@@ -32,6 +32,8 @@
             <a href="#home"><span class="navbar__items">HOME</span></a>
             <a href="#news"><span class="navbar__items">About us</span></a>
             <a href="#contact"><span class="navbar__items">contact</span></a>
+            <a href="#popup"><span class="navbar__items-right">login</span></a>
+            <a href="signup.html"><span class="navbar__items-right">signup</span></a>
         </div>
        
 
@@ -48,6 +50,44 @@
             </div>
         </header>
         
+        <!--        FORM        -->
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                </div>
+                <section class="section-book">
+                    <div class="row">
+                        <div class="book">
+                            <div class="book__form">
+                                <form action="#" class="form">
+                                    <div class="u-margin-bottom-small">
+                                        <h2 class="heading-secondary">
+                                            login
+                                        </h2>
+                                    </div>
+                
+                                    <div class="form__group">
+                                        <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                        <label for="email" class="form__label">Email address</label>
+                                    </div>
+                
+                                    <div class="form__group">
+                                        <input type="password" class="form__input" placeholder="Password" id="password" required>
+                                        <label for="password" class="form__label">Password</label>
+                                    </div>
+                
+                                    <div class="form__group">
+                                        <button class="btn btn--green u-center-text">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
         <!--        MAIN        -->
         <section class="section-about">
 
@@ -61,8 +101,6 @@
                         <img srcset="" alt="LOGO" src="">
                 </picture>
             </div>
-
-            
         </footer>
     </body>
 </html>
