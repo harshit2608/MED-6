@@ -1,12 +1,20 @@
 .section-about{
-    background-color: $color-black;
-    padding:45rem 0; 
+    background-color: $color-grey-light-2;
+    padding:20rem 0; 
     margin-top: -15vh;
+    
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
 }
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .book {

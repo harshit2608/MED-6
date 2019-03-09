@@ -15,12 +15,15 @@
   text-align: center;
   padding: 1.5rem;
   text-decoration: none;
-  transition: all .1s;
+  transition: all .4s;
 }
 
 #navbar a:hover {
+  border-radius: 3px;
   background-color: $color-primary-dark;
   color: $color-white;
+  transform: translateY(1rem) scale(1.2);
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
 }
 .navbar{
   &__items{
@@ -36,6 +39,5 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $color-white;
-    right: 4%;
   }
 }
