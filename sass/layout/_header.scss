@@ -1,0 +1,27 @@
+.header{
+    height: 90vh;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    background-image: linear-gradient(105deg, rgba($color-white, 0.8)0%, rgba($color-white,0.8)50%, transparent 50%), url(../img/helenalopes.jpg);
+
+    &__overlay-box{
+        position: absolute;
+        top: 0rem;
+        left: 0;
+    }
+
+    &__overlay{
+        height: 3.5rem;
+    }
+
+    &__text-box{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-45%,-50%);
+        text-align: center;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "med-6",
+  "version": "1.0.0",
+  "description": "Because health matters ",
+  "main": "main.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshit2608/Hackthon.git"
+  },
+  "author": "harshit and team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshit2608/Hackthon/issues"
+  },
+  "homepage": "https://github.com/harshit2608/Hackthon#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

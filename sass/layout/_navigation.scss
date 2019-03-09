@@ -1,0 +1,41 @@
+#navbar {
+  background-image: linear-gradient(to right bottom ,rgba($color-primary-light,0.8),rgba($color-primary-dark,0.8));
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  transition: top 0.4s; 
+  z-index: 500;
+  padding-right: 3rem;
+}
+
+#navbar a{
+  float: left;
+  display: block;
+  color: $color-white;
+  text-align: center;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: all .1s;
+}
+
+#navbar a:hover {
+  background-color: $color-primary-dark;
+  color: $color-white;
+}
+.navbar{
+  &__items{
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  &__items-right{
+    float: right;
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
+    right: 4%;
+  }
+}
