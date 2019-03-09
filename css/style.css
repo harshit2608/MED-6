@@ -30,6 +30,7 @@ html {
 
 body {
   box-sizing: border-box;
+  padding-top: 5.7rem;
   overflow-x: hidden;
   overflow-y: scroll; }
 
@@ -84,10 +85,9 @@ body {
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1rem;
-  text-align: center; }
+  font-size: 1.6rem; }
   .paragraph:not(:last-child) {
-    margin-bottom: 2rem; }
+    margin-bottom: 3rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -186,6 +186,33 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -359,7 +386,7 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  height: 90vh;
+  height: 88vh;
   background-position: top;
   background-size: cover;
   position: relative;
@@ -371,10 +398,10 @@ body {
     top: 0rem;
     left: 0; }
   .header__overlay {
-    height: 3.5rem; }
+    height: 35rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 30%;
     transform: translate(-45%, -50%);
     text-align: center; }
@@ -395,11 +422,14 @@ body {
   text-align: center;
   padding: 1.5rem;
   text-decoration: none;
-  transition: all .1s; }
+  transition: all .4s; }
 
 #navbar a:hover {
+  border-radius: 3px;
   background-color: #28b485;
-  color: #fff; }
+  color: #fff;
+  transform: translateY(1rem) scale(1.2);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3); }
 
 .navbar__items {
   font-size: 1.6rem;
@@ -412,12 +442,11 @@ body {
   font-size: 1.6rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
-  right: 4%; }
+  color: #fff; }
 
 .section-about {
-  background-color: #000;
-  padding: 45rem 0;
+  background-color: #eee;
+  padding: 20rem 0;
   margin-top: -15vh; }
 
 .section-book {
