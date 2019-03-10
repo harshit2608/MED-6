@@ -1,0 +1,48 @@
+<!DOCTYPE.HTML>
+<html>
+ <head><title>google forms</title>
+     <link href="style.css" rel="stylesheet">
+     <script src="form.js"></script>
+ </head>
+    <body>
+        <div class="heder">
+        <h1> google forms
+            </h1>
+            
+        </div>
+      <div class="continer">
+            <div class="signin">
+                <p id="hl">user sign in <p>
+             <form>
+                <input type="text" placeholder="username" name="username" ><br>
+                <input   type="password" placeholder="password" name="password"><br>
+                 <input  class="h" type="submit" value="sign in" onclick="msg()"><br><br>
+             </form>
+            </div>
+       
+            
+            <div class="signup">
+                <p id="hl">user sign up <p>
+                <form>
+                    <input  type="text" placeholder="username" name="username"><br>
+                    <input  type="email" placeholder="user email" name="user email"><br>
+                     <input  type="email" placeholder="re-enter email" name="re-email"><br>
+                     <input  type="password" placeholder="password" name="password"><br>
+                    <input  type="password" placeholder="re-entered password" name="re-password"><br><br>
+                    
+                    <label class="hello">select gender</label>
+                    <input  type="radio" name="gender" value="male">male</input>
+                    <input    type="radio" name="gender" value="female">female</input><br><br>
+                    
+                     <label class="lb">select age group</label>
+            <select>
+                    <option value="1">below 18</option>
+                    <option value="2">above 18</option>
+                    <option value="3">below 40</option>
+                    <option value="4">above40</option>
+            </select><br>
+            
+            <input class="h" type="submit" value="sign up"><br>
+            </div>
+        </div>   
+    </body></html>
