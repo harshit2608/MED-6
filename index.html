@@ -129,12 +129,39 @@
 
             <!--        BOOKING SECTION     -->
 
-            <section class="section-dropdown">
-                
-                <div>
-
+            <section class="section-dropdown" id="booknow"> 
+                <h2 class="u-center-text u-margin-bottom-small heading-secondary-two">BOOKING SECTION</h2>
+                <button class="collapsible">hospital list</button>
+                <div class="content">
+                    <ol>
+                        <li>Aruna Asaf Ali Govt. Hospital</li>
+                        <li>Acharyaashree Bhikshu Hospital</li>
+                        <li>Attar Sain Jain Hospital</li>
+                        <li>Baba Saheb Ambedkar Hospital</li>
+                        <li>Bhagwan Mahaveer Hospital</li>
+                        <li>Babu Jagjivan Ram Hospital </li>
+                        <li>Central Jail Hospital</li>
+                        <li>Chacha Nehru Bal Chikitsalaya</li>
+                        <li>Dadadev Mother & Child Hospital</li>
+                        <li>Deen Dayal Upadhyay Hospital</li>
+                        <li>Deep Chand Bandhu Hospital</li>
+                        <li>Delhi State Cancer Institution</li>
+                        <li>Dr. Hedgewar Arogya Sansthan</li>
+                        <li>Dr. N.C. Joshi Hospital</li>
+                        <li>Govind Ballabh Pant Hospital (G.B.P.H.)</li>
+                        <li>Guru Govind Singh Govt. Hospital</li>
+                        <li>Guru Nanak Eye Center</li>
+                        <li>Guru Teg Bahadur Hospital (G.T.B.H.)</li>
+                        <li>Institute of Liver & Biliary Sciences (I.L.B.S.)</li>
+                        <li>Institute of Human Behaviour and Allied Sciences (I.H.B.A.S.)</li>
+                        <li>Janakpuri Super Speciality Hospital </li>
+                    </ol>
                 </div>
+
             </section>
+
+
+            <!--        SECTION STORIES     -->
 
             <section class="section__stories">
                 <div class="bg-video">
@@ -222,79 +249,24 @@
                 </div>
             </div>
         </footer>
+
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
     </body>
 </html>
-
-
-<!--           SACHIN BHAI YHA SE UTHA LE CHOOSE KARLE           -->
-
-
-<!--
-        <section class="grid-test">
-            <div class="row">
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    Col 2 of 3
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-           </div>
-
-           <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-2-of-4">
-                    Col 2 of 4
-                </div>
-            </div> 
-            
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    Col 3 of 4
-                </div>
-            </div>
-        </section>
-        -->

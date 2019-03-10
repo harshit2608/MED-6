@@ -123,6 +123,14 @@ body {
   font-weight: 700;
   text-transform: uppercase; }
 
+.heading-secondary-two {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  margin-top: -12rem; }
+
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
@@ -624,9 +632,8 @@ body {
   background-size: cover;
   padding: 30rem 0;
   margin-top: -18rem;
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%); }
-  .section-dropdown > * {
-    transform: skewY(5deg); }
 
 .section__stories {
   position: relative;
@@ -644,3 +651,44 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem; }
+
+.collapsible {
+  background-color: #2998ff;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 2rem;
+  margin-left: 4rem;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 2rem;
+  border-radius: 5px; }
+
+.active, .collapsible:hover {
+  background-color: #5643fa;
+  border-bottom: 5px solid #ffb900;
+  border-left: 5px solid #ffb900; }
+
+.collapsible:after {
+  content: '\002B';
+  color: #5643fa;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; }
+
+.active:after {
+  content: "\2212"; }
+
+.content {
+  margin-left: 4rem;
+  width: 90%;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding-left: 5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fff; }

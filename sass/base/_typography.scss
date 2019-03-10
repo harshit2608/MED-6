@@ -75,6 +75,15 @@ body{
     text-transform: uppercase;
 }
 
+.heading-secondary-two{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: $color-white;
+    margin-top: -12rem;
+}
+
 .paragraph {
     font-size: $default-font-size;
 

@@ -1,0 +1,21 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+body {
+  box-sizing: border-box;
+  padding-top: 5.7rem;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+body {
+  font-family: "Lato" , sans-serif;
+  font-weight: 480;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: #55c57a; }

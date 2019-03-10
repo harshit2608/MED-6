@@ -25,12 +25,8 @@
     background-size: cover;                    
     padding:30rem 0; 
     margin-top: -18rem;
+    -webkit-clip-path: polygon(0 15vh,100% 0,100% 100% ,0 100%);
     clip-path: polygon(0 15vh,100% 0,100% 100% ,0 100%);
-
-    & > *{
-        transform: skewY(5deg);
-    }
-
 }
 
 .section__stories{
@@ -58,4 +54,51 @@
         width: 50%;
         padding: 6rem;
     }
+}
+
+.collapsible {
+  background-color:$color-tertiary-light;
+  color: $color-white;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 2rem;
+  margin-left: 4rem;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: $greater-font-size;
+  border-radius: 5px;
+}
+
+.active, .collapsible:hover {
+  background-color:$color-tertiary-dark;
+  border-bottom: 5px solid $color-secondary-light;
+  border-left: 5px solid $color-secondary-light;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color:$color-tertiary-dark;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+    margin-left: 4rem;
+    width: 90%;
+    padding: 0 2rem;
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    padding-left: 5rem;
+    max-height: 0;
+    overflow: hidden;
+    
+    transition: max-height 0.2s ease-out;
+    background-color:$color-white;
 }
