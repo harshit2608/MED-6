@@ -1,7 +1,7 @@
 .section-about{
     background-color: $color-grey-light-2;
-    padding:20rem 0; 
-    margin-top: -15vh;
+    padding:25rem 0; 
+    margin-top: -22vh;
     
     @include respond(tab-port) {
         padding: 15rem 0;
@@ -14,6 +14,31 @@
 
     @include respond(tab-port) {
         padding: 10rem 0;
+    }
+}
+
+.section-dropdown{
+    background-image: linear-gradient(to right bottom ,
+                        rgba($color-primary-light, 0.8),
+                        rgba($color-primary-dark, 0.8)),
+                        url(../img/helenalopes.jpg);
+    background-size: cover;                    
+    padding:30rem 0; 
+    margin-top: -18rem;
+    clip-path: polygon(0 15vh,100% 0,100% 100% ,0 100%);
+
+    & > *{
+        transform: skewY(5deg);
+    }
+
+}
+
+.section__stories{
+    position: relative;
+    padding: 15rem 0;
+
+    @include respond(tab-port){
+        padding: 20rem 0 10rem 0;
     }
 }
 
