@@ -76,3 +76,46 @@
         }
     }
 }
+
+.middle{
+  top: 50%;
+  transform: translate(-9%,20%);
+  width: 100%;
+  text-align: center;
+}
+.btn-footer-icons{
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: $color-primary;
+  overflow: hidden;
+  position: relative;
+}
+.btn-footer-icons i{
+  line-height: 65px;
+  font-size: 2.6rem;
+  transition: 0.2s linear;
+}
+.btn-footer-icons:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn-footer-icons::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: $color-primary;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn-footer-icons:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
