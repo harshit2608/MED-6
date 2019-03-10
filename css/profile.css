@@ -1,4 +1,4 @@
-*,
+/* *,
 ::before,
 ::after {
   margin: 0;
@@ -18,4 +18,118 @@ body {
   font-weight: 480;
   /*font-size: 16px;*/
   line-height: 1.7;
-  color: #55c57a; }
+  color: #55c57a; } */
+
+*{
+	box-sizing: border-box;
+
+}
+body{
+	font-family: 'Nunito', sans-serif;
+	color: #384047
+	
+}
+form{
+	max-width: 300px;
+	margin: 10px auto;
+	padding: 10px 20px;
+	background-color: #f4f7f8;
+	border-radius: 8px;
+}
+h1{
+	margin: 0 0 30px 0;
+	text-align:center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="Phone"],
+
+textarea,
+select{
+	background-color: rgba(225,225,225,0.1);
+	border:none;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 100%;
+	background-color: #e8eeef;
+	color: #8a97a0;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+
+}
+
+input:focus, textarea:focus{
+	box-shadow: 0 0 5px rgba(81,203,238,1);
+	border: 1px solid rgba(81,203,238,1);
+}
+
+input[type="radio"]{
+	margin: 0 4px 8px 0; 
+}
+
+fieldset{
+	margin-bottom: 30px;
+	border:none;
+}
+
+legend{
+	display: block;
+	margin-bottom: 8px;
+}
+
+label.light{
+	font-weight: 300;
+	display: inline;
+}
+
+.section{
+	background-color: #5fcf80;
+	color: #fff;
+	height: 30px;
+	width:30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 100%;
+
+}
+
+button{
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	background-color: #4bc970;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	width: 100%;
+	border: 1px solid #3ac163;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 -1px o rgba(255,255,255,0.1) inset;
+	margin-bottom: 10px;
+
+
+}
+input[type="submit"]{
+	color: #FFF;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	background-color: #4bc970;
+	padding: 5px 10px 5px 10px;
+
+
+}
+
+@media screen and (min-width: 480px){
+	form{
+		max-width: 480px;
+	}
+}
