@@ -26,16 +26,13 @@
     <body>
         <!--        PRELOADER       -->
         <div class="loader">
-    <img src="img/loading.gif" alt="Loading..." />
-          </div>
-        
-        <preloader class="preloader">
-
-        </preloader> 
+            <img src="img/loading.gif" alt="Loading..." />
+        </div>
+       
         
         <!--        NAVIGATION      -->
         <div id="navbar">
-            <a href="#home"><span class="navbar__items">HOME</span></a>
+            <a href="#header"><span class="navbar__items">HOME</span></a>
             <a href="#aboutus"><span class="navbar__items">About us</span></a>
             <a href="#contact"><span class="navbar__items">contact</span></a>
             <a style="float: right" href="#popup"><span class="navbar__items-right">login</span></a>
@@ -44,7 +41,7 @@
        
 
         <!--        HEADER      -->
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__overlay-box">
                 <img src="img/Banner Overlay Edit.png" alt="Overlay" class="header__overlay">
             </div>
@@ -135,37 +132,8 @@
             <section class="section-booking" id="booknow">
                 <h2 class="u-center-text u-margin-bottom-small heading-secondary-two">make an appointment</h2>
                 <div class="booking-lay">
-                    
-                </div>                
-                <!--
-                <button class="collapsible">hospital list</button>
-                <div class="content">
-                    <ol>
-                        <li>Aruna Asaf Ali Govt. Hospital</li>
-                        <li>Acharyaashree Bhikshu Hospital</li>
-                        <li>Attar Sain Jain Hospital</li>
-                        <li>Baba Saheb Ambedkar Hospital</li>
-                        <li>Bhagwan Mahaveer Hospital</li>
-                        <li>Babu Jagjivan Ram Hospital </li>
-                        <li>Central Jail Hospital</li>
-                        <li>Chacha Nehru Bal Chikitsalaya</li>
-                        <li>Dadadev Mother & Child Hospital</li>
-                        <li>Deen Dayal Upadhyay Hospital</li>
-                        <li>Deep Chand Bandhu Hospital</li>
-                        <li>Delhi State Cancer Institution</li>
-                        <li>Dr. Hedgewar Arogya Sansthan</li>
-                        <li>Dr. N.C. Joshi Hospital</li>
-                        <li>Govind Ballabh Pant Hospital (G.B.P.H.)</li>
-                        <li>Guru Govind Singh Govt. Hospital</li>
-                        <li>Guru Nanak Eye Center</li>
-                        <li>Guru Teg Bahadur Hospital (G.T.B.H.)</li>
-                        <li>Institute of Liver & Biliary Sciences (I.L.B.S.)</li>
-                        <li>Institute of Human Behaviour and Allied Sciences (I.H.B.A.S.)</li>
-                        <li>Janakpuri Super Speciality Hospital </li>
-                    </ol>
-                </div>
-            -->
-
+     
+                </div> 
             </section>
 
 
@@ -271,24 +239,5 @@
                 </div>
             </div>
         </footer>
-
-
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
-            }
-        </script>
-
     </body>
 </html>
