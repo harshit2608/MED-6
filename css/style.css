@@ -787,3 +787,23 @@ body {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #fff; }
+
+.feedbackk {
+  background-color : #55c57a;
+/*    background-image: url(img/chat.png);*/
+  color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
+  border-color: #55c57a;
+    outline: none;
+}
+.feedbackk:hover{
+    cursor: pointer;
+} 
+
+#mybuttonn {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+    
+}
