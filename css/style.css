@@ -176,7 +176,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   color: #fff;
-  margin-top: -15rem;
+  margin-top: -10rem;
   transition: all .2s; }
   .heading-secondary-two:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -269,6 +269,14 @@ body {
   color: #fff; }
   .btn--green::after {
     background-color: #55c57a; }
+
+.btn--blue {
+  background-color: #a5a8ff;
+    
+  color: #fff; 
+width}
+  .btn--blue::after {
+    background-color: #a5a8ff;}
 
 .btn::after {
   content: "";
@@ -724,8 +732,9 @@ body {
 .section-booking {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/booking_image.jpg);
   background-size: cover;
-  padding: 30rem 0;
-  margin-top: -18rem;
+  padding: 25rem 0;
+  padding-bottom: 10rem;
+  margin-top: -12rem;
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%); }
 
@@ -746,46 +755,31 @@ body {
     width: 50%;
     padding: 6rem; }
 
-.collapsible {
-  background-color: #2998ff;
-  color: #fff;
+.booking__form{
   text-transform: uppercase;
-  cursor: pointer;
-  padding: 2rem;
-  margin-left: 4rem;
-  width: 90%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 2rem;
-  border-radius: 5px; }
+  margin-left: 65%;
+  width: 100%;
 
-.active, .collapsible:hover {
-  background-color: #5643fa;
-  border-bottom: 5px solid #ffb900;
-  border-left: 5px solid #ffb900; }
+}
+#btn-big{
+  width: 50%;
+  margin-left: 20%;
+  margin-right: 50%;
+  background-color:#3b0cf7; 
+  border:none;
+  
+}
+.booking__form #s2{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 
-.collapsible:after {
-  content: '\002B';
-  color: #5643fa;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px; }
-
-.active:after {
-  content: "\2212"; }
-
-.content {
-  margin-left: 4rem;
-  width: 90%;
-  padding: 0 2rem;
-  font-size: 1.6rem;
+}
+#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8{
   text-transform: uppercase;
-  padding-left: 5rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #fff; }
+    outline: none;
+  opacity: 0.9;
+
+}
 .feedbackk {
   background-color : #55c57a;
 /*    background-image: url(img/chat.png);*/
