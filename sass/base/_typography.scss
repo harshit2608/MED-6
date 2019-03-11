@@ -81,7 +81,13 @@ body{
     text-decoration: none;
     font-weight: 700;
     color: $color-white;
-    margin-top: -12rem;
+    margin-top: -15rem;
+    transition: all .2s;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
 }
 
 .paragraph {
