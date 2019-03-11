@@ -12,7 +12,7 @@ body{
     box-sizing: border-box;
     padding-top: 5.7rem;
     overflow-x: hidden;
-    overflow-y: visible;
+    overflow-y: hidden;
 }
 .heading-secondary {
     font-size: 3.5rem;
