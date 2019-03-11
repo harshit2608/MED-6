@@ -16,16 +16,70 @@
 
     <!--LINKS-->
     <link rel="shortcut icon" href="../img/favicon.jpeg" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="../css/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Nunito:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" type="text/css" href="../css/profile.css">
     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
     <script type="text/javascript" src="main.js"></script>
 
     <title>MED-6 | Profile</title>
 </head>
 
-<body>
-     
+<body id="bod">
+  <div class="container">
+
+    <form>
+    <div class="bc"> 
+      <h1>Profile Page</h1>
+      <fieldset>
+
+        <legend><span class="section">1</span>Your Basic Info</legend>
+
+        <!-- <label for="fullnaem">fullname:</label> -->
+        <input type="text" name="Fullname" placeholder="Fullname">
+
+        <!-- <label for="email">Email:</label> -->
+        <input type="email" name="email" placeholder="Email ID">
+
+        <label for="file">Choose Profile Picture:</label>
+        <input type="file" name="file1" >
+        <input type="submit" name="Upload">
+
+      </fieldset>
+
+
+      <fieldset>
+
+        <legend><span class="section">2</span>Your Profile</legend>
+
+        <!-- <label for="password">Password:</label> -->
+        <input type="password" name="password" placeholder="Password">
+
+        <label>Gender:</label>
+      
+        <input type="radio" name="gender" value="male">
+        <label class="light" for="male">Male</label>
+      
+        <input type="radio" name="gender" value="female">
+        <label class="light" for="female">Female</label>
+        <br>
+
+
+        <br><!-- <label for="date">Date</label> -->
+        <input type="date" name="date" placeholder="Date">
+
+        <br><!-- <label for="address">Address:</label> -->
+        <textarea name="address" placeholder="Address"></textarea>
+
+        <!-- <label>Phone No. :</label> -->
+        <input type="Phone" name="phone" placeholder="Phone No.">
+
+      </fieldset>
+
+      <a href="../index.html"><button type="submit">Submit profile</button></a>
+    </div>
+    </form>
+ </div>
 </body>
 
 </html>
