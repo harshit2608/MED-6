@@ -690,7 +690,9 @@ body {
   background-color: #28b485;
   color: #fff;
   transform: translateY(1rem) scale(1.2);
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  margin-left: 2%;
+}
 
 .navbar__items {
   font-size: 1.6rem;
