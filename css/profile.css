@@ -8,7 +8,7 @@ body{
 	margin:0;
 	padding: 0;
 	
-	background-image: url(img/prof.jpg);
+	background-image: url(../img/prof.jpg);
 	background-size: cover;
 }
 form{
