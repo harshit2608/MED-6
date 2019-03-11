@@ -140,7 +140,11 @@ body {
   text-decoration: none;
   font-weight: 700;
   color: #fff;
-  margin-top: -12rem; }
+  margin-top: -15rem;
+  transition: all .2s; }
+  .heading-secondary-two:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -680,7 +684,7 @@ body {
     .section-book {
       padding: 10rem 0; } }
 
-.section-dropdown {
+.section-booking {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/helenalopes.jpg);
   background-size: cover;
   padding: 30rem 0;
