@@ -24,6 +24,7 @@ body{
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
+    margin-top: 1rem;
 }
 
 .heading-secondary:hover {
@@ -117,9 +118,7 @@ body{
 
 .btn--green::after {
     background-color: #55c57a;
-}
-    
-    
+} 
 .btn::after {
     content: "";
     display: inline-block;
@@ -146,14 +145,16 @@ body{
 }
 .book {
     background-image: linear-gradient(105deg, 
-                    rgba(255,255,255, .9) 0%,
-                    rgba(255,255,255, .9) 50%,
-                    transparent 50%) ;
+                    rgba(238,238,238, .9) 0%,
+                    rgba(238,238,238, .9) 60%,
+                    transparent 40%), url(../img/helenalopes.jpg);
                     
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0, .2);
-    height: 5rem;
+    height: 50rem;
+    
+    margin: 0 5rem;
 }
 .book__form {
     width: 50%;
