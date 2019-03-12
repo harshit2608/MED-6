@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Chat Room</title>
+           <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image:url("../img/chatroom.jpg");
+            background-size: cover;
+        }
+        
+        .txtarea{
+            background-color: rgba(225,225,225,0.1);
+	border: none;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	border-radius: 15px;
+	width: 50%;
+    margin-left:25%;
+	background-color: #e8eeef;
+	color: darkslategray;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+    margin-top: 5%;
+	opacity: 1;
+            text-decoration: none;
+        }
+        
+        .btnn{
+            
+            color: #FFF;
+	background-color: #4bc970;
+	font-size: 15px;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	width: 10%;
+	border: 1px solid #3ac163;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 -1px o rgba(255,255,255,0.1) inset;
+	margin-bottom: 10px;
+    margin-top: 1%;
+    margin-left: 46%;
+        }
+        
+       
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <textarea class="txtarea" id="chat-log" cols="100" style="font-style: italic;" rows="20"></textarea><br/>
+    <input class="txtarea"id="chat-message-input" style="font-style: italic;" type="text" size="100"/><br/>
+    <input class="btnn" id="chat-message-submit" type="button" value="Send"/>
+</body>
+<script>
+    var roomName = {{ room_name_json }};
+
+    var chatSocket = new WebSocket(
+        'ws://' + window.location.host +
+        '/ws/medchat/' + roomName + '/');
+
+    chatSocket.onmessage = function(e) {
+        var data = JSON.parse(e.data);
+        var message = data['message'];
+        document.querySelector('#chat-log').value += (message + '\n');
+    };
+
+    chatSocket.onclose = function(e) {
+        console.error('Chat socket closed unexpectedly');
+    };
+
+    document.querySelector('#chat-message-input').focus();
+    document.querySelector('#chat-message-input').onkeyup = function(e) {
+        if (e.keyCode === 13) {  // enter, return
+            document.querySelector('#chat-message-submit').click();
+        }
+    };
+
+    document.querySelector('#chat-message-submit').onclick = function(e) {
+        var messageInputDom = document.querySelector('#chat-message-input');
+        var message = messageInputDom.value;
+        chatSocket.send(JSON.stringify({
+            'message': message
+        }));
+
+        messageInputDom.value = '';
+    };
+</script>
+</html>

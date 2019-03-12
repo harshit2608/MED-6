@@ -1,0 +1,146 @@
+<!-- chat/templates/chat/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>MED CHAT ROOM</title>
+           <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Permanent+Marker" rel="stylesheet">
+
+<!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <style>
+         body{
+            margin: 0;
+            padding: 0;
+            background-image: url("../img/roombkg.jpg"); 
+            background-size: cover;
+
+            }
+                     
+.header{
+  font-size: 3.0rem;
+    
+  text-transform: ;
+  font-weight: 700;
+    
+  display: inline-block;
+   font-family: 'Dancing Script', cursive;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right, #36ccf9, #28b485);
+  -webkit-background-clip: text;
+  color: ;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s; 
+  padding-left: 25%;
+  padding-right: 20%;
+  text-align: center;
+  margin-bottom: 8%;
+  margin-top: 5%;
+}
+.room input[type = "text"]:focus
+{
+    width: 280px;
+    border-color: #5D6D7E;
+}
+  @media only screen and (max-width: 56.25em) {
+    .header{
+      font-size: 3rem;
+       } }
+  @media only screen and (max-width: 37.5em) {
+    .header{
+      font-size: 2.5rem; } }
+  .header:hover {
+    -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+            transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+ .room
+{
+     margin-top: 10px;
+     text-align: center;
+     text-decoration: none;
+     font-family: Nunito;
+     width: 400px;
+     height: 40px;
+     top: 30%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-30%);
+    background:#ff 
+    color: white;
+    
+    font-size: 15px;
+    font-weight: ;
+    border-radius: 24px;
+}
+
+.room input[type="text"]{
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: Nunito;
+    border-radius: 24px;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    margin-top: 5px; text-align: left;
+    padding: 10px 10px;
+    border: 0;
+    background: none;
+   text-align: center;
+    border: 2px solid #45B39D  ;
+    text-align: center;
+    color: white;
+    transition: 0.25s;
+}
+.btnn{
+   
+	color: #FFF;
+	background-color: #4bc970;
+	font-size: 15px;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	width: 10%;
+	border: 1px solid #3ac163;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 -1px o rgba(255,255,255,0.1) inset;
+	margin-bottom: 10px;
+    margin-top: 7%;
+    margin-left: 46%;
+
+}
+.btnn input[type="button"]:hover,.btnn input[type="button"]:hover
+{
+    background-color: gray;
+}
+</style>
+         
+</head>
+<body>
+    <h3 class="header">Enter The Name Of The Doctor You Want To Contact:</h3><br>
+    <input  class="room" id="room-name-input" placeholder="Doctor Name" type="text" size="50"/><br/>
+   <a href="room.html"><input  class="btnn" id="room-name-submit" type="submit" value="Enter" placeholder="Enter" name="Enter" /></a> 
+
+    <script>
+        document.querySelector('#room-name-input').focus();
+        document.querySelector('#room-name-input').onkeyup = function(e) {
+            if (e.keyCode === 13) {  // enter, return
+                document.querySelector('#room-name-submit').click();
+            }
+        };
+
+        document.querySelector('#room-name-submit').onclick = function(e) {
+            var roomName = document.querySelector('#room-name-input').value;
+            window.location.pathname = '/medchat/' + roomName + '/';
+        };
+    </script>
+</body>
+</html>
