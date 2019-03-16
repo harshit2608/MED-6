@@ -140,7 +140,7 @@ input[type="submit"]:hover{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px $color-primary; 
+  box-shadow: inset 0 0 5px #55c57a; 
   border-radius: 10px;
 }
  
@@ -154,15 +154,3 @@ input[type="submit"]:hover{
 ::-webkit-scrollbar-thumb:hover {
   background: #6cad61; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
