@@ -1,6 +1,4 @@
 //javascipt in here
-
-
 //SCROLL BAR SCRIPT
 
 var prevScrollpos = window.pageYOffset;
